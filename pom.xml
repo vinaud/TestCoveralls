@@ -16,6 +16,11 @@
 				<version>2.0.1</version>
 				<configuration>
 					<repoToken>GQWxksoJrmGeXMwSfvQF20WbiguXcDJhn</repoToken>
+					<instrumentation>
+						<excludes>
+							<exclude>**/Papperround.java</exclude>
+						</excludes>
+					</instrumentation>
 				</configuration>
 			</plugin>
 
