@@ -78,6 +78,10 @@
 					<target>1.7</target>
 					<testSource>1.7</testSource>
 					<testTarget>1.7</testTarget>
+					<excludes>
+						<exclude>**/Test*.class</exclude>
+						<exclude>**/Test*.java</exclude>
+					</excludes>
 				</configuration>
 			</plugin>
 
