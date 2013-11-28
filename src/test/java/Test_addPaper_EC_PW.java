@@ -13,30 +13,26 @@ import org.junit.Test;
 public class Test_addPaper_EC_PW {
 
 	private Paperround paperround;
-	private List<Integer> magazines;
 	private List<Integer> papers;
 
 	@Before
 	public void startUp() {
 		paperround = new Paperround();
-		magazines = new ArrayList<>();
 		papers = new ArrayList<>();
 	}
-	
+
 	@Test
-	public void testCase1() {
-		paperround.setMagazines(magazines);
-		paperround.setPapers(papers);
+	public void TestCase1() {
 		paperround.addPaper(1);
-		assertEquals(1, paperround.getPapers().size());
+		papers = paperround.getPapers();
+		assertTrue(papers.contains(1));
 	}
-	
+
 	@Test
-	public void testCase2() {
-		paperround.setMagazines(magazines);
-		paperround.setPapers(papers);
+	public void TestCase2() {
 		paperround.addPaper(-1);
-		assertEquals(0, paperround.getPapers().size());
+		papers = paperround.getPapers();
+		assertFalse(papers.contains(-1));
 	}
 
 }

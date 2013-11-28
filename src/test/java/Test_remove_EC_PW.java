@@ -1,6 +1,6 @@
 package test.java;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,23 +22,21 @@ public class Test_remove_EC_PW {
 		magazines = new ArrayList<>();
 		papers = new ArrayList<>();
 	}
-	
+
 	@Test
-	public void testCase1() {
-		paperround.setMagazines(magazines);
-		paperround.setPapers(papers);
+	public void TestCase1() {
 		paperround.remove(-1);
-		assertEquals(0, paperround.getMagazines().size());
-		assertEquals(0, paperround.getPapers().size());
+		magazines = paperround.getMagazines();
+		papers = paperround.getPapers();
+		assertFalse(magazines.contains(-1) && papers.contains(-1));
 	}
-	
+
 	@Test
-	public void testCase2() {
-		paperround.setMagazines(magazines);
-		paperround.setPapers(papers);
+	public void TestCase2() {
 		paperround.remove(1);
-		assertEquals(0, paperround.getMagazines().size());
-		assertEquals(0, paperround.getPapers().size());
+		magazines = paperround.getMagazines();
+		papers = paperround.getPapers();
+		assertFalse(magazines.contains(1) && papers.contains(1));
 	}
-	
+
 }
