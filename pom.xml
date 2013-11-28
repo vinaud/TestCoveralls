@@ -37,6 +37,14 @@
 						<maxmem>256m</maxmem>
 						<aggregate>true</aggregate>
 					</configuration>
+					<executions>
+						<execution>
+							<phase>test</phase>
+							<goals>
+								<goal>cobertura</goal>
+							</goals>
+						</execution>
+					</executions>
 				</plugin>
 
 				<plugin>
@@ -45,6 +53,10 @@
 					<version>2.0.1</version>
 					<configuration>
 						<repoToken>NQ0y9evHfChnB1yHlQ1iOQzG726x0H9ZB</repoToken>
+						<source>1.7</source>
+						<target>1.7</target>
+						<testSource>1.7</testSource>
+						<testTarget>1.7</testTarget>
 					</configuration>
 				</plugin>
 
