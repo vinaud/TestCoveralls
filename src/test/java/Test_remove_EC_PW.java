@@ -11,7 +11,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class Test_remove_EC_PW {
-/*
+
 	private Paperround paperround;
 	private List<Integer> magazines;
 	private List<Integer> papers;
@@ -38,5 +38,5 @@ public class Test_remove_EC_PW {
 		papers = paperround.getPapers();
 		assertFalse(magazines.contains(1) && papers.contains(1));
 	}
-*/
+
 }

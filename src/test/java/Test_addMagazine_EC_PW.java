@@ -11,7 +11,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class Test_addMagazine_EC_PW {
-/*
+
 	private Paperround paperround;
 	private List<Integer> magazines;
 
@@ -36,5 +36,5 @@ public class Test_addMagazine_EC_PW {
 		magazines = paperround.getMagazines();
 		assertFalse(magazines.contains(0));
 	}
-*/
+
 }
