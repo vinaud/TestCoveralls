@@ -19,14 +19,6 @@
 					<version>1.2.0</version>
 					<configuration>
 						<repoToken>GQWxksoJrmGeXMwSfvQF20WbiguXcDJhn</repoToken>
-						<instrumentation>
-							<excludes>
-								<exclude>**/Test*.class</exclude>
-								<exclude>**/Test*.java</exclude>
-								<exclude>**/Main*.class</exclude>
-								<exclude>**/Main*.java</exclude>
-							</excludes>
-						</instrumentation>
 					</configuration>
 				</plugin>
 
@@ -38,14 +30,6 @@
 						<format>xml</format>
 						<maxmem>256m</maxmem>
 						<aggregate>true</aggregate>
-						<instrumentation>
-							<excludes>
-								<exclude>**/Test*.class</exclude>
-								<exclude>**/Test*.java</exclude>
-								<exclude>**/Main*.class</exclude>
-								<exclude>**/Main*.java</exclude>
-							</excludes>
-						</instrumentation>
 					</configuration>
 				</plugin>
 
@@ -73,12 +57,6 @@
 					<target>1.6</target>
 					<testSource>1.6</testSource>
 					<testTarget>1.6</testTarget>
-					<excludes>
-						<exclude>**/Test*.class</exclude>
-						<exclude>**/Test*.java</exclude>
-						<exclude>**/Main*.class</exclude>
-						<exclude>**/Main*.java</exclude>
-					</excludes>
 				</configuration>
 			</plugin>
 		</plugins>
