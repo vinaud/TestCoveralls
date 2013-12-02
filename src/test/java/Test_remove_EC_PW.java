@@ -24,21 +24,19 @@ public class Test_remove_EC_PW {
 	}
 
 	@Test
-	public void TestCase1() {
+	public void testCase1() {
 		paperround.remove(-1);
 		magazines = paperround.getMagazines();
 		papers = paperround.getPapers();
-		//assertFalse(magazines.contains(-1) && papers.contains(-1));
-		assertTrue(true);
+		assertFalse(magazines.contains(-1) && papers.contains(-1));
 	}
 
 	@Test
-	public void TestCase2() {
+	public void testCase2() {
 		paperround.remove(1);
 		magazines = paperround.getMagazines();
 		papers = paperround.getPapers();
 		assertFalse(magazines.contains(1) && papers.contains(1));
-		assertTrue(true);
 	}
 
 }

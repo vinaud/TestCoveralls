@@ -22,19 +22,17 @@ public class Test_addPaper_EC_PW {
 	}
 
 	@Test
-	public void TestCase1() {
+	public void testCase1() {
 		paperround.addPaper(1);
 		papers = paperround.getPapers();
-		//assertTrue(papers.contains(1));
-		assertTrue(true);
+		assertTrue(papers.contains(1));
 	}
 
 	@Test
-	public void TestCase2() {
+	public void testCase2() {
 		paperround.addPaper(-1);
 		papers = paperround.getPapers();
-		//assertFalse(papers.contains(-1));
-		assertTrue(true);
+		assertFalse(papers.contains(-1));
 	}
 
 }

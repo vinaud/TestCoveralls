@@ -22,21 +22,19 @@ public class Test_addMagazine_EC_PW {
 	}
 
 	@Test
-	public void TestCase1() {
+	public void testCase1() {
 		int houseNumber = 1;
 		paperround.addPaper(houseNumber);
 		paperround.addMagazine(houseNumber);
 		magazines = paperround.getMagazines();
-		//assertTrue(magazines.contains(1));
-		assertTrue(true);
+		assertTrue(magazines.contains(1));
 	}
 
 	@Test
-	public void TestCase2() {
+	public void testCase2() {
 		paperround.addMagazine(0);
 		magazines = paperround.getMagazines();
-		//assertFalse(magazines.contains(0));
-		assertTrue(true);
+		assertFalse(magazines.contains(0));
 	}
 
 }
