@@ -16,7 +16,7 @@ public class Test_addMagazine_EC_PW {
 	private List<Integer> magazines;
 
 	@Before
-	public void startUp() {
+	public void setUp() {
 		paperround = new Paperround();
 		magazines = new ArrayList<>();
 	}

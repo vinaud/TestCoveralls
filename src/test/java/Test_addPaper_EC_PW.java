@@ -16,7 +16,7 @@ public class Test_addPaper_EC_PW {
 	private List<Integer> papers;
 
 	@Before
-	public void startUp() {
+	public void setUp() {
 		paperround = new Paperround();
 		papers = new ArrayList<>();
 	}

@@ -17,7 +17,7 @@ public class Test_remove_EC_PW {
 	private List<Integer> papers;
 
 	@Before
-	public void startUp() {
+	public void setUp() {
 		paperround = new Paperround();
 		magazines = new ArrayList<>();
 		papers = new ArrayList<>();
