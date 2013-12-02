@@ -18,27 +18,31 @@ public class Test_remove_EC_PW {
 
 	@Before
 	public void setUp() {
-		/*paperround = new Paperround();
+		paperround = new Paperround();
 		magazines = new ArrayList<>();
-		papers = new ArrayList<>();*/
+		papers = new ArrayList<>();
 	}
 
 	@Test
 	public void testCase1() {
-		/*paperround.remove(-1);
+		int houseNumber = -1;
+		paperround.setMagazines(magazines);
+		paperround.setPapers(papers);
+		paperround.remove(houseNumber);
 		magazines = paperround.getMagazines();
 		papers = paperround.getPapers();
-		assertFalse(magazines.contains(-1) && papers.contains(-1));*/
-		assertTrue(true);
+		assertFalse(magazines.contains(-1) && papers.contains(-1));
 	}
 
 	@Test
 	public void testCase2() {
-		/*paperround.remove(1);
+		int houseNumber = 1;
+		paperround.setMagazines(magazines);
+		paperround.setPapers(papers);
+		paperround.remove(houseNumber);
 		magazines = paperround.getMagazines();
 		papers = paperround.getPapers();
-		assertFalse(magazines.contains(1) && papers.contains(1));*/
-		assertTrue(true);
+		assertFalse(magazines.contains(1) && papers.contains(1));
 	}
 
 }
